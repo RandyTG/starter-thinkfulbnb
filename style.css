@@ -135,7 +135,6 @@ footer p {
 }
 
 /* -------  Media Query ------- */
-
 @media all and (min-width: 480px) {
   header {
     display: flex;
@@ -145,7 +144,7 @@ footer p {
 
   .logo {
     font-family: "Pangolin", cursive;
-    font-size: 50px;
+    font-size: 43px;
     color: #fff;
     align-self: center;
     padding: 10px 0px;
@@ -157,7 +156,8 @@ footer p {
 
   form {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
 
   .form-input {
@@ -190,5 +190,27 @@ footer p {
   .ideas-section {
     display: flex;
     justify-content: space-between;
+  }
+}
+
+@media all and (min-width: 795px) {
+  form {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .form-input {
+    flex-direction: column;
+  }
+
+  form input,
+  form select {
+    flex-grow: 1;
+    width: 100%;
+  }
+
+  form button {
+    width: 100%;
   }
 }
