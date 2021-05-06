@@ -63,7 +63,7 @@ header {
 
 .logo {
   font-family: "Pangolin", cursive;
-  font-size: 72px;
+  font-size: 17vw;
   color: #fff;
 }
 
@@ -157,17 +157,21 @@ footer p {
 
   form {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
   }
 
   .form-input {
     flex-direction: column;
   }
 
+  form input,
+  form select {
+    flex-grow: 1;
+    width: 100%;
+  }
+
   form button {
-    width: 170px;
+    width: 100%;
   }
 
   .item-d {
@@ -185,7 +189,6 @@ footer p {
 
   .ideas-section {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
   }
 }
